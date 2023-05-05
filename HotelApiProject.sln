@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{481CC2A1-8108-4602-ABD4-BAE51238FB47}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDoList", "ToDoList", "{33696D5F-19B9-46CE-9FEA-26068CE30AFF}"
+	ProjectSection(SolutionItems) = preProject
+		Adımlar.txt = Adımlar.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.WebApi", "ApiConsume\HotelProject.WebApi\HotelProject.WebApi.csproj", "{2887A978-9456-41A2-B356-1379326A3CA6}"
 EndProject
@@ -16,6 +19,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.DataAccessLayer", "ApiConsume\HotelProject.DataAccessLayer\HotelProject.DataAccessLayer.csproj", "{A9693DE8-AAA5-49E8-8282-D9E7546B6BF2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.BusinessLayer", "ApiConsume\HotelProject.BusinessLayer\HotelProject.BusinessLayer.csproj", "{12C756BA-0F8A-4E01-B945-B41553565C55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.DtoLayer", "ApiConsume\HotelProject.DtoLayer\HotelProject.DtoLayer.csproj", "{94910054-0FFB-4B0F-B1BC-DFFBC435F986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.WebUI", "Frontend\HotelProject.WebUI\HotelProject.WebUI.csproj", "{446CAFDD-DBB4-4927-8546-D948135040E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +46,14 @@ Global
 		{12C756BA-0F8A-4E01-B945-B41553565C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C756BA-0F8A-4E01-B945-B41553565C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12C756BA-0F8A-4E01-B945-B41553565C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94910054-0FFB-4B0F-B1BC-DFFBC435F986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94910054-0FFB-4B0F-B1BC-DFFBC435F986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94910054-0FFB-4B0F-B1BC-DFFBC435F986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94910054-0FFB-4B0F-B1BC-DFFBC435F986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{446CAFDD-DBB4-4927-8546-D948135040E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446CAFDD-DBB4-4927-8546-D948135040E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446CAFDD-DBB4-4927-8546-D948135040E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446CAFDD-DBB4-4927-8546-D948135040E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +63,8 @@ Global
 		{E20A7F55-BA76-44D3-BF30-6170183C8836} = {3F590181-D087-40B4-ABD1-7C8EF84869D8}
 		{A9693DE8-AAA5-49E8-8282-D9E7546B6BF2} = {3F590181-D087-40B4-ABD1-7C8EF84869D8}
 		{12C756BA-0F8A-4E01-B945-B41553565C55} = {3F590181-D087-40B4-ABD1-7C8EF84869D8}
+		{94910054-0FFB-4B0F-B1BC-DFFBC435F986} = {3F590181-D087-40B4-ABD1-7C8EF84869D8}
+		{446CAFDD-DBB4-4927-8546-D948135040E2} = {481CC2A1-8108-4602-ABD4-BAE51238FB47}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74F70858-9012-456D-A064-3E49A35E60A0}

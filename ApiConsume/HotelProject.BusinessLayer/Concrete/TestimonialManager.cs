@@ -1,4 +1,5 @@
 ﻿using HotelProject.BusinessLayer.Abstract;
+using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,36 +11,36 @@ namespace HotelProject.BusinessLayer.Concrete
 {
     public class TestimonialManager : ITestimonialService
     {
-        private readonly ITestimonialService _testimonialDal;
+        private readonly ITestimonialDal _testimonialDal;
 
-        public TestimonialManager(ITestimonialService testimonialDal)
+        public TestimonialManager(ITestimonialDal testimonialDal)
         {
             _testimonialDal = testimonialDal;
         }
 
         public void TDelete(Testimonial t)
         {
-            _testimonialDal.TDelete(t);
+            _testimonialDal.Delete(t);
         }
 
         public Testimonial TGetById(int id)
         {
-            return _testimonialDal.TGetById(id);
+            return _testimonialDal.GetById(id);
         }
 
         public List<Testimonial> TGetList()
         {
-            return _testimonialDal.TGetList();
+            return _testimonialDal.GetList();
         }
 
         public void TInsert(Testimonial t)
         {
-            _testimonialDal.TInsert(t);
+            _testimonialDal.Insert(t);
         }
 
         public void TUpdate(Testimonial t)
         {
-            _testimonialDal.TUpdate(t);
+            _testimonialDal.Update(t);
         }
     }
 }

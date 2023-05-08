@@ -1,4 +1,5 @@
 ﻿using HotelProject.BusinessLayer.Abstract;
+using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,36 +11,36 @@ namespace HotelProject.BusinessLayer.Concrete
 {
     public class ServiceManager : IServiceService
     {
-        private readonly IServiceService _serviceDal;
+        private readonly IServiceDal _serviceDal;
 
-        public ServiceManager(IServiceService serviceDal)
+        public ServiceManager(IServiceDal serviceDal)
         {
             _serviceDal = serviceDal;
         }
 
         public void TDelete(Service t)
         {
-            _serviceDal.TDelete(t);
+            _serviceDal.Delete(t);
         }
 
         public Service TGetById(int id)
         {
-            return _serviceDal.TGetById(id);
+            return _serviceDal.GetById(id);
         }
 
         public List<Service> TGetList()
         {
-            return _serviceDal.TGetList();
+            return _serviceDal.GetList();
         }
 
         public void TInsert(Service t)
         {
-            _serviceDal.TInsert(t);
+            _serviceDal.Insert(t);
         }
 
         public void TUpdate(Service t)
         {
-            _serviceDal.TUpdate(t);
+            _serviceDal.Update(t);
         }
     }
 }

@@ -32,7 +32,7 @@ namespace HotelProject.WebApi.Controllers
         {
             _roomService.TInsert(room);
 
-            return Ok();
+            return Ok()
         }
 
         [HttpDelete]

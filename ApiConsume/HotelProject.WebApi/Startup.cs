@@ -48,6 +48,9 @@ namespace HotelProject.WebApi
             services.AddScoped<ITestimonialDal, EfTestimonialDal>();
             services.AddScoped<ITestimonialService, TestimonialManager>();
 
+            services.AddScoped<IAboutDal, EfAboutDal>();
+            services.AddScoped<IAboutService, AboutManager>();
+
             services.AddAutoMapper(typeof(Startup));
 
             services.AddCors(opt =>
@@ -59,7 +62,7 @@ namespace HotelProject.WebApi
             });
 
             services.AddControllers();
-            services.AddSwaggerGen(c => 
+            services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HotelProject.WebApi", Version = "v1" });
             });

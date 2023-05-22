@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HotelProject.WebUI.Dtos.LoginDto
+namespace HotelProject.WebUI.Dtos.LoginDto 
 {
     public class LoginUserDto
     {

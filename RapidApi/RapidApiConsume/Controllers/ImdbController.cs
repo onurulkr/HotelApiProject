@@ -11,7 +11,7 @@ namespace RapidApiConsume.Controllers
     {
         public async Task<IActionResult> Index()
         {
-            var client = new HttpClient();
+            var client = new HttpClient(); 
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,

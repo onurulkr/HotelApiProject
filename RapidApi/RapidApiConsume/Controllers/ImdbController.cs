@@ -13,7 +13,6 @@ namespace RapidApiConsume.Controllers
     {
         public async Task<IActionResult> Index()
         {
-            List<ApiMovieViewModel> apiMovieViewModels = new List<ApiMovieViewModel>();
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {
@@ -21,8 +20,9 @@ namespace RapidApiConsume.Controllers
                 RequestUri = new Uri("https://imdb-top-100-movies.p.rapidapi.com/"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "630ce9cc86msh271c60cffe62d5ep1b514djsn0fe292593744" },
-        { "X-RapidAPI-Host", "imdb-top-100-movies.p.rapidapi.com" },
+        { "Type", "get-movie-details" },
+        { "X-RapidAPI-Key", "13e0f27fefmshcc18f89a7bca370p1a7e8ejsn4b7011472cef" },
+        { "X-RapidAPI-Host", "movies-tv-shows-database.p.rapidapi.com" },
     },
             };
             using (var response = await client.SendAsync(request))

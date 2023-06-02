@@ -13,6 +13,7 @@ namespace RapidApiConsume.Controllers
     {
         public async Task<IActionResult> Index()
         {
+            List<ApiMovieViewModel> apiMovieViewModels = new List<ApiMovieViewModel>();
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {

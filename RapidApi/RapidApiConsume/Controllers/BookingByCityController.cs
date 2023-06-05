@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RapidApiConsume.Controllers
 {
-    public class BookingByCityController : Controller
+    public class BookingByCityController : Controller 
     {
         public async Task<IActionResult> Index(string cityId)
         {

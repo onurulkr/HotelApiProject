@@ -11,51 +11,51 @@ namespace HotelProject.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RoomController : ControllerBase
+    public class GuestController : ControllerBase
     {
-        private readonly IRoomService _roomService;
-        public RoomController(IRoomService roomService)
+        private readonly IGuestService _guestService;
+        public GuestController(IGuestService guestService)
         {
-            _roomService = roomService;
+            _guestService = guestService;
         }
 
         [HttpGet]
-        public IActionResult RoomList()
+        public IActionResult GuestList()
         {
-            var values = _roomService.TGetList();
+            var values = _guestService.TGetList();
 
             return Ok(values);
         }
 
         [HttpPost]
-        public IActionResult AddRoom(Room room)
+        public IActionResult AddGuest(Guest Guest)
         {
-            _roomService.TInsert(room);
+            _guestService.TInsert(Guest);
 
             return Ok();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteRoom(int id)
+        public IActionResult DeleteGuest(int id)
         {
-            var values = _roomService.TGetById(id);
-            _roomService.TDelete(values);
+            var values = _guestService.TGetById(id);
+            _guestService.TDelete(values);
 
             return Ok();
         }
 
         [HttpPut]
-        public IActionResult UpdateRoom(Room room)
+        public IActionResult UpdateGuest(Guest Guest)
         {
-            _roomService.TUpdate(room);
+            _guestService.TUpdate(Guest);
 
             return Ok();
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetRoom(int id)
+        public IActionResult GetGuest(int id)
         {
-            var values = _roomService.TGetById(id);
+            var values = _guestService.TGetById(id);
 
             return Ok(values);
         }

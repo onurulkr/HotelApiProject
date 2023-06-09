@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace HotelProject.WebUI.Controllers
 {
     public class AdminRoomController : Controller
-    {
+    { 
         private readonly IHttpClientFactory _httpClientFactory;
         public AdminRoomController(IHttpClientFactory httpClientFactory)
         {

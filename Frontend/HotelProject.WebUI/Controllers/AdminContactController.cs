@@ -10,7 +10,7 @@ namespace HotelProject.WebUI.Controllers
     {
         public IActionResult Inbox()
         {
-            return View();
+            return View(); 
         }
     }
 }

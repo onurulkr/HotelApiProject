@@ -54,7 +54,7 @@ namespace HotelProject.WebUI.Controllers
         [HttpGet]
         public IActionResult AddSendMessage()
         {
-            return View();
+            return View(); 
         }
 
         [HttpPost]

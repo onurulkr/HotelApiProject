@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text; 
 using System.Threading.Tasks;
 
-namespace HotelProject.BusinessLayer.Abstract
+namespace HotelProject.BusinessLayer.Abstract 
 {
     public interface IAboutService : IGenericService<About>   
     {

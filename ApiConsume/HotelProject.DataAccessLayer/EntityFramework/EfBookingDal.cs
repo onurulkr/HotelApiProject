@@ -21,7 +21,7 @@ namespace HotelProject.DataAccessLayer.EntityFramework
             var context = new Context();
             var values = context.Bookings.Where(x => x.BookingId == booking.BookingId).FirstOrDefault();
             values.Status = "Onaylandı";
-            context.SaveChanges();
+            context.SaveChanges(); 
         }
 
         public void BookingStatusChangeApproved2(int id)

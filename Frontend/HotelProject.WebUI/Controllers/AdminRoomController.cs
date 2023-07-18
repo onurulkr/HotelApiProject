@@ -63,7 +63,7 @@ namespace HotelProject.WebUI.Controllers
 
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index"); 
             }
 
             return View();

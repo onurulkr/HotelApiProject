@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using WebApiJwt.Models;
 
 namespace WebApiJwt.Controllers
-{
+{ 
     [Route("api/[controller]")]
     [ApiController]
     public class DefaultController : ControllerBase

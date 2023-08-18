@@ -8,6 +8,6 @@ using System.Threading.Tasks;
 namespace HotelProject.BusinessLayer.Abstract 
 {
     public interface IAboutService : IGenericService<About>     
-    {
+    { 
     }
 }

@@ -12,7 +12,7 @@ namespace HotelProject.WebUI.Controllers
 {
     public class BookingAdminController : Controller 
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IHttpClientFactory _httpClientFactory; 
         public BookingAdminController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;

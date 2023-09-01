@@ -16,7 +16,7 @@ namespace HotelProject.WebUI.Controllers
         public BookingAdminController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
-        }
+        } 
 
         public async Task<IActionResult> Index()
         {

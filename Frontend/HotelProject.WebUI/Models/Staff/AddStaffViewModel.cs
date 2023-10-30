@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace HotelProject.WebUI.Models.Staff
-{
+{ 
     public class AddStaffViewModel
     {
         public int StaffId { get; set; }
